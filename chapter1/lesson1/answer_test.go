@@ -9,21 +9,19 @@ func TestIsUniqueChar(t *testing.T) {
 	if unique := IsUniqueChar(text); !unique {
 		t.Fatal(text)
 	}
-
 	text = "abcdefgg"
 	if unique := IsUniqueChar(text); unique {
 		t.Fatal(text)
 	}
 }
 
-func TestIsUniqueCharNoUseDataStructure(t *testing.T) {
+func TestIsUniqueCharByNotUseDataStructure(t *testing.T) {
 	text := "abcdefg"
-	if unique := IsUniqueCharNoUseDataStructure(text); !unique {
+	if unique := IsUniqueCharByNotUseDataStructure(text); !unique {
 		t.Fatal(text)
 	}
-
 	text = "abcdefgg"
-	if unique := IsUniqueCharNoUseDataStructure(text); unique {
+	if unique := IsUniqueCharByNotUseDataStructure(text); unique {
 		t.Fatal(text)
 	}
 }

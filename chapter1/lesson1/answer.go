@@ -1,17 +1,17 @@
 package lesson1
 
 func IsUniqueChar(text string) bool {
-	uniqueRuneMap := make(map[rune]bool, len(text))
+	m := make(map[rune]bool, len(text))
 	for _, char := range text {
-		if ok := uniqueRuneMap[char]; ok {
+		if ok := m[char]; ok {
 			return false
 		}
-		uniqueRuneMap[char] = true
+		m[char] = true
 	}
 	return true
 }
 
-func IsUniqueCharNoUseDataStructure(text string) bool {
+func IsUniqueCharByNotUseDataStructure(text string) bool {
 	for li, lchar := range text {
 		for ri, rChar := range text {
 			if li != ri && lchar == rChar {

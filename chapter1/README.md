@@ -1,7 +1,7 @@
 # Keywords
 
-## ハッシュテーブル
+## HashTable
 
-## 可変長配列
+## ArrayList
 
-## 文字列バッファ
+## StringBuffer
